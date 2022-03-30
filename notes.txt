@@ -18,6 +18,49 @@ http module : handle request and response of server
 pakage.json file : keeps project details related to code like project version , name , repository , different packages,
 
 node js is single threaded
+node js async
+
+to get input from console use console.log(process.argv)
+first two parameter (node_installation_dir ,__filename) and other parameter we can pass
+only the content of folder is accessible in node out of that folder you can't access any files
+
+buffer is like RAM a temporary memory that is required by node js to perfrom operation
+
+
+drawback of asynchronouc
+let a =10; let b=0;
+
+setTimeout(()=>{
+    b=20;
+
+},2000) //2-seconds
+
+console.log(a+b); result will be 10;
+
+solution: callback or use promises , previously we use callback now we use promises,async wait
+
+-----------------------------------------------------------------------------------------------
+node js architecture
+
+Event Loop : =>
+call stack (is always necessary) -> node APIs -> call back queue
+
+call stack register all the function before the execution of the function
+
+node APIs : external functions register there which are out of JS like timeout function
+-----------------------------------------------------------------------------------------------
+
+
+static function load static page or content
+
+template engine: use to create dynamic pages
+
+
+for the common layout use include command with dash - insted of = in <%-%>
+
+middleware 
+
+nodemon || time saving module: runs continously no need to run again and again
 
 
 Moduels : OS, FS, events, http, manual,

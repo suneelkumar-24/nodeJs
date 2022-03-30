@@ -1,15 +1,19 @@
 const http = require('http');
-// http.createServer((req,resp)=>{
-//     resp.write('<h1>Hello this is suneel</h1>');
-//     resp.end();
-// }).listen(4500);
 
-function dataControl(req,resp)
-{
-    resp.write('<h1>Hello,, this is suneel</h1>');
+const data = require('./data');
+
+http.createServer((req,resp)=>{
+    resp.writeHead(200,{'Content-Type':'application\json'});
+    resp.write(JSON.stringify(data));
     resp.end();
-}
-http.createServer(dataControl).listen(4500);
+}).listen(4500);
+
+// function dataControl(req,resp)
+// {
+//     resp.write('<h1>Hello,, This is Mr. suneel</h1>');
+//     resp.end();
+// }
+// http.createServer(dataControl).listen(4500);
 
 
 

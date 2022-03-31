@@ -58,7 +58,46 @@ template engine: use to create dynamic pages
 
 for the common layout use include command with dash - insted of = in <%-%>
 
-middleware 
+middleware use to change in request and response
+
+middleware types
+application level
+router-level (single, group , all routes)
+error-handling
+built-in middleware
+third party middleware
+
+***MONGO DB & Compass***
+mongodb is NoSQL database,
+data is stored in collection
+collection don't have row and columns
+data is stored in the form of objects
+
+
+commands mongodb
+use youtube -- will create the youtube database , will not be visible untill there is no collection
+db.createCollection('videos') will create the collection and database will be visible
+show collections will show the collection of current database
+db.drop.videos will drop the collection
+db.dropDatabase to drop the current database
+
+crud in mongodb
+db.collectionName.insertOne()
+db.collectionName.updateOne()
+ex ;db.videos.updateOne({size:25},{$set:{type:"web application"}})
+db.collectionName.find()
+db.collectionName.deleteOne({size:25})
+
+we can connect with mulitiple database in node js
+
+Promises: whenever we do heavy operation the code doesn't wait for that operation it execute the next lines
+    so whenever that part get exectued it return some results so to handle those result promises come in used
+
+how would you update single record with mutiple match ans: use updateOne
+
+wheather the record is deleted or not how would we know as the acknowledged is alway ture if data is not present
+but deleteCount will tell , if deleteCount =0 this means there is no data present to delete
+
 
 nodemon || time saving module: runs continously no need to run again and again
 

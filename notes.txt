@@ -98,6 +98,37 @@ how would you update single record with mutiple match ans: use updateOne
 wheather the record is deleted or not how would we know as the acknowledged is alway ture if data is not present
 but deleteCount will tell , if deleteCount =0 this means there is no data present to delete
 
+how would you get body from the request ans: using body parser or express.json();
+
+mongodb vs mongoose
+we can't use model and schemas,
+mongodb is not able to restrict the fields input,
+mongoose is used for the validation
+
+schemas are used to validate the fields
+model used to connect node js with mongodb
+model: used this schema to connect the node js with mongodb
+
+search with single and multiple fields
+search with the help of regex: patterns used to match character combinations in strings
+
+multer npm package for file upload single file upload multiple file upload
+
+OS module : internal module
+to know the informaton about operating system , like to know RAM, architecture, hostname, platform,
+if the project wish to work different on mac and windows then we can use that module
+os.arch() : =>x64
+os.freemem
+
+events and event emitter
+events: are like signal
+event emitter: which generate the event like in html : the button is event emitter
+in node js : button click can be made through api call
+on and emit are the main function;
+
+REPL: Read Eval(evalute) print loop
+.editor in cmd
+
 
 nodemon || time saving module: runs continously no need to run again and again
 
